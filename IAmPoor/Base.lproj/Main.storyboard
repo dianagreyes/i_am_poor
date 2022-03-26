@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IAmPoor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yHr-Pl-gfD">
+                                <rect key="frame" x="134.5" y="64" width="145" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
+                                <color key="textColor" red="0.92549019607843142" green="1" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_poor" translatesAutoresizingMaskIntoConstraints="NO" id="VW6-Pe-5vb">
+                                <rect key="frame" x="87" y="251" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="18G-4e-WlR"/>
+                                    <constraint firstAttribute="height" constant="240" id="hzQ-h4-odq"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Am Poor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZZ-kl-Qbv">
+                                <rect key="frame" x="118" y="154" width="178" height="47"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" red="0.96470588235294119" green="0.88235294117647056" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.1803921568627451" blue="0.3529411764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yHr-Pl-gfD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="57R-ey-vD7"/>
+                            <constraint firstItem="VW6-Pe-5vb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6Ol-yV-8aq"/>
+                            <constraint firstItem="vZZ-kl-Qbv" firstAttribute="top" secondItem="yHr-Pl-gfD" secondAttribute="bottom" constant="20" id="Pwa-Pj-d8u"/>
+                            <constraint firstItem="vZZ-kl-Qbv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Uta-bj-G3B"/>
+                            <constraint firstItem="yHr-Pl-gfD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lh9-li-GCi"/>
+                            <constraint firstItem="VW6-Pe-5vb" firstAttribute="top" secondItem="vZZ-kl-Qbv" secondAttribute="bottom" constant="50" id="zbA-e6-7c5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_poor" width="242.5" height="241"/>
+    </resources>
+</document>
